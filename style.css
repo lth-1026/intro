@@ -3,3 +3,8 @@
 body {
   font-family: 'Gothic A1', sans-serif;
 }
+
+#header {
+  border: 1px solid;
+  text-align: center;
+}
