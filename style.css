@@ -15,31 +15,66 @@ body {
   padding: 10px;
 }
 
-#container {
-  display: flex;
+@media all and (min-width: 769px) {
+
+  #container {
+    display: flex;
+  }
+
+  #container > div {
+    margin: 10px;
+    background-color: gray;
+  }
+
+  .side {
+    flex: 1 100px;
+  }
+
+  .contents {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 4 200px;
+  }
+
+  .contents > div {
+    flex-wrap: wrap;
+    background-color: red;
+    flex: 300px;
+    height: 300px;
+    margin: 10px;
+    line-height: 75px;
+  }
 }
 
-#container > div {
-  margin: 10px;
-  background-color: gray;
-}
+@media (max-width: 768px){
+  #container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
-.side {
-  flex: 1 100px;
-}
+  #container > div {
+    margin: 10px;
+    background-color: gray;
+  }
 
-.contents {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex: 4 200px;
-}
+  .side {
+    flex: 1 100px;
+  }
 
-.contents > div {
-  flex-wrap: wrap;
-  background-color: red;
-  flex: 300px;
-  height: 300px;
-  margin: 10px;
-  line-height: 75px;
+  .contents {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 4 200px;
+  }
+
+  .contents > div {
+    flex-wrap: wrap;
+    background-color: red;
+    flex: 300px;
+    height: 300px;
+    margin: 10px;
+    line-height: 75px;
+  }
 }
