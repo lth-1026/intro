@@ -4,7 +4,7 @@ function add_div() {
   div.innerHTML = document.getElementById('main_container').innerHTML;
   document.getElementById('field').appendChild(div);
   div.style.backgroundColor = 'gray';
-  div.style.margin = '10px 0px 10px 0px';
+  div.style.margin = '10px 0px 0px 0px';
   div.style.padding = '10px';
 }
 
