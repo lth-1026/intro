@@ -22,6 +22,12 @@ body {
   display: none;
 }
 
+#field {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+}
+
 .form-group {
   color: red;
 }
