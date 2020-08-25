@@ -1,0 +1,31 @@
+body {
+  margin: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: gray;
+}
+
+.plusbutton {
+  width: 80px;
+  height: 40px;
+}
+
+.main_container {
+  background-color: gray;
+}
+
+#main_container {
+  display: none;
+}
+
+.form-group {
+  color: red;
+}
+
+.form-control {
+  color: red;
+}
