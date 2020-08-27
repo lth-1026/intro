@@ -2,81 +2,44 @@
 
 body {
   font-family: 'Gothic A1', sans-serif;
-
-}
-
-* {
-  box-sizing: border-box;
-}
-
-#header {
-  text-align: center;
-  background-color: gray;
-  margin: 10px;
-  padding: 10px;
 }
 
 @media all and (min-width: 769px) {
 
   #container {
-    display: flex;
+    display: grid;
+    grid-template-rows: repeat(5, 200px);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
   }
-
-  #container > div {
-    margin: 10px;
+  #header {
+    grid-column: span 4;
+    text-align: center;
     background-color: gray;
   }
 
-  .side {
-    flex: 1 100px;
-  }
-
-  .contents {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex: 4 200px;
-  }
-
-  .contents > div {
-    //flex-wrap: wrap;
-    background-color: red;
-    flex: 300px;
-    height: 300px;
-    margin: 10px;
-    line-height: 75px;
+  #intro, #edu, #project, #etc {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: gray;
   }
 }
 
 @media (max-width: 768px){
+
   #container {
-    display: flex;
-    flex-direction: column-reverse;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
   }
 
-  #container > div {
-    margin: 10px;
+  #header {
+    text-align: center;
     background-color: gray;
   }
 
-  .side {
-    flex: 1 100px;
-    padding: 10px;
-  }
-
-  .contents {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex: 0 0 auto;
-    height: 100%;
-  }
-
-  .contents > div {
-    background-color: red;
-    flex: 300px;
-    height: 300px;
-    margin: 10px;
-    padding: 10px;
+  #intro, #edu, #project, #etc {
+    min-height: 200px;
+    background-color: gray;
   }
 }

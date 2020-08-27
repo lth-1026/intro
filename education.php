@@ -17,7 +17,7 @@ function print_edu_name() {
     <meta charset="utf-8">
     <title></title>
     <style media="screen">
-      .add_edu {
+      .add_edu, .rm_edu {
         background-color: gray;
         padding: 10px;
         margin: 10px;
@@ -32,6 +32,13 @@ function print_edu_name() {
         <span>학력 추가</span>
         <input type="text" name="edu" value="">
         <input type="submit" name="" value="submit">
+      </div>
+    </form>
+    <form class="" action="rm.php" method="post">
+      <div class="rm_edu">
+        <span>학력 삭제</span>
+        <input type="text" name="change" value="">
+        <input type="submit" name="" value="click">
       </div>
     </form>
     <?php
